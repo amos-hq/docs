@@ -1,0 +1,104 @@
+---
+title: "Integration Overview"
+description: "Understand how Amos integrates with your existing technology ecosystem"
+---
+
+# Integration Overview
+
+## Architecture Philosophy
+
+Amos is designed to complement and enhance your existing technology infrastructure, not replace it. Our integration-first approach ensures seamless connectivity with your current systems while providing a unified data layer for enhanced analytics and reporting.
+
+## High-Level Architecture
+
+```mermaid
+graph TB
+    A[Fund Administration Systems] --> D[Amos Data Platform]
+    B[Portfolio Management Systems] --> D
+    C[CRM & Deal Management] --> D
+    E[Accounting Systems] --> D
+    
+    D --> F[Executive Dashboards]
+    D --> G[Investor Reporting]
+    D --> H[Regulatory Filings]
+    D --> I[Analytics & Insights]
+    
+    style D fill:#16A34A,stroke:#333,stroke-width:3px,color:#fff
+```
+
+## Integration Benefits
+
+<CardGroup cols={2}>
+  <Card title="Unified Data View" icon="database">
+    Consolidate data from multiple systems into a single source of truth
+  </Card>
+  <Card title="Real-time Synchronization" icon="refresh">
+    Maintain up-to-date information across all connected systems
+  </Card>
+  <Card title="Reduced Manual Work" icon="robot">
+    Eliminate manual data entry and reconciliation processes
+  </Card>
+  <Card title="Enhanced Analytics" icon="chart-bar">
+    Enable cross-system analytics and comprehensive reporting
+  </Card>
+</CardGroup>
+
+## Key Integration Categories
+
+### Fund Administration Systems
+- Automated data extraction and validation
+- Real-time portfolio valuation updates
+- Streamlined investor reporting workflows
+
+### Portfolio Management Platforms
+- Position and performance data synchronization
+- Risk analytics and monitoring integration
+- Investment decision support tools
+
+### CRM and Deal Management
+- Deal pipeline and relationship data integration
+- Automated reporting and communication workflows
+- Enhanced due diligence coordination
+
+## Data Flow & Security
+
+### Data Movement
+- Secure, encrypted data transmission
+- Configurable synchronization schedules
+- Real-time and batch processing options
+
+### Security & Compliance
+- Enterprise-grade security protocols
+- SOC 2 Type II compliance
+- Role-based access controls and audit trails
+
+## Implementation Approach
+
+<Steps>
+  <Step title="Assessment">
+    Evaluate existing systems and integration requirements
+  </Step>
+  <Step title="Design">
+    Create custom integration architecture for your environment
+  </Step>
+  <Step title="Development">
+    Build and test integration connections
+  </Step>
+  <Step title="Deployment">
+    Implement with minimal disruption to operations
+  </Step>
+  <Step title="Optimization">
+    Monitor and optimize performance over time
+  </Step>
+</Steps>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="System Compatibility" icon="arrow-right" href="/fund-leaders/integration/existing-systems">
+    Review supported systems and integration methods
+  </Card>
+  <Card title="Deployment Options" icon="arrow-right" href="/fund-leaders/integration/deployment-options">
+    Explore cloud, on-premise, and hybrid approaches
+  </Card>
+</CardGroup>

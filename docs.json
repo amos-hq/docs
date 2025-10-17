@@ -48,6 +48,52 @@
         ]
       },
       {
+        "tab": "For Fund Leaders",
+        "groups": [
+          {
+            "group": "Executive Overview",
+            "pages": [
+              "fund-leaders/index",
+              "fund-leaders/business-value"
+            ]
+          },
+          {
+            "group": "Use Cases & Applications",
+            "pages": [
+              "fund-leaders/use-cases/index",
+              "fund-leaders/use-cases/private-equity",
+              "fund-leaders/use-cases/venture-capital",
+              "fund-leaders/use-cases/hedge-funds"
+            ]
+          },
+          {
+            "group": "Integration & Implementation",
+            "pages": [
+              "fund-leaders/integration/index",
+              "fund-leaders/integration/existing-systems",
+              "fund-leaders/integration/deployment-options"
+            ]
+          },
+          {
+            "group": "Getting Started",
+            "pages": [
+              "fund-leaders/implementation/index",
+              "fund-leaders/implementation/getting-started",
+              "fund-leaders/implementation/team-requirements",
+              "fund-leaders/implementation/change-management"
+            ]
+          },
+          {
+            "group": "Success Stories",
+            "pages": [
+              "fund-leaders/success-stories/index",
+              "fund-leaders/success-stories/case-study-1",
+              "fund-leaders/success-stories/case-study-2"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "API reference",
         "groups": [
           {
@@ -84,8 +130,8 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/amos-logo.png",
+    "dark": "/logo/amos-logo.png"
   },
   "navbar": {
     "links": [
