@@ -1,0 +1,506 @@
+---
+title: "Timeline and Roadmap Components"
+description: "Visual timeline components for implementation phases and project roadmaps"
+---
+
+import { Card } from '@mintlify/components'
+
+## Implementation Timeline
+
+<Card title="Amos Implementation Roadmap" icon="map">
+  <div style={{ padding: '20px 0' }}>
+    <div style={{
+      position: 'relative',
+      paddingLeft: '40px'
+    }}>
+      {/* Timeline line */}
+      <div style={{
+        position: 'absolute',
+        left: '20px',
+        top: '0',
+        bottom: '0',
+        width: '2px',
+        backgroundColor: '#e5e7eb'
+      }}></div>
+      
+      {/* Phase 1: Adapt */}
+      <div style={{
+        position: 'relative',
+        marginBottom: '40px'
+      }}>
+        <div style={{
+          position: 'absolute',
+          left: '-28px',
+          top: '8px',
+          width: '16px',
+          height: '16px',
+          borderRadius: '50%',
+          backgroundColor: '#059669',
+          border: '3px solid white',
+          boxShadow: '0 0 0 2px #059669'
+        }}></div>
+        <div style={{
+          backgroundColor: '#f0fdf4',
+          border: '1px solid #bbf7d0',
+          borderRadius: '8px',
+          padding: '16px',
+          marginLeft: '8px'
+        }}>
+          <div style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            marginBottom: '8px'
+          }}>
+            <h4 style={{ margin: 0, color: '#059669', fontSize: '16px' }}>Phase 1: Adapt (Months 1-6)</h4>
+            <span style={{ fontSize: '12px', color: '#059669', fontWeight: '500' }}>25-40% efficiency gains</span>
+          </div>
+          <p style={{ margin: '0 0 12px 0', fontSize: '14px', color: '#065f46' }}>
+            Amos adapts to your current processes and systems without disruption
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', fontSize: '13px' }}>
+            <div>
+              <strong>Key Activities:</strong>
+              <ul style={{ margin: '4px 0 0 0', paddingLeft: '16px' }}>
+                <li>System integration setup</li>
+                <li>Data pipeline configuration</li>
+                <li>Initial user training</li>
+                <li>Pilot reporting workflows</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Deliverables:</strong>
+              <ul style={{ margin: '4px 0 0 0', paddingLeft: '16px' }}>
+                <li>Connected data sources</li>
+                <li>Basic dashboards</li>
+                <li>Automated data validation</li>
+                <li>User access controls</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Phase 2: Align */}
+      <div style={{
+        position: 'relative',
+        marginBottom: '40px'
+      }}>
+        <div style={{
+          position: 'absolute',
+          left: '-28px',
+          top: '8px',
+          width: '16px',
+          height: '16px',
+          borderRadius: '50%',
+          backgroundColor: '#2563eb',
+          border: '3px solid white',
+          boxShadow: '0 0 0 2px #2563eb'
+        }}></div>
+        <div style={{
+          backgroundColor: '#eff6ff',
+          border: '1px solid #bfdbfe',
+          borderRadius: '8px',
+          padding: '16px',
+          marginLeft: '8px'
+        }}>
+          <div style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            marginBottom: '8px'
+          }}>
+            <h4 style={{ margin: 0, color: '#2563eb', fontSize: '16px' }}>Phase 2: Align (Months 6-12)</h4>
+            <span style={{ fontSize: '12px', color: '#2563eb', fontWeight: '500' }}>75% faster reporting</span>
+          </div>
+          <p style={{ margin: '0 0 12px 0', fontSize: '14px', color: '#1e40af' }}>
+            Stakeholders align on new processes and embrace enhanced capabilities
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', fontSize: '13px' }}>
+            <div>
+              <strong>Key Activities:</strong>
+              <ul style={{ margin: '4px 0 0 0', paddingLeft: '16px' }}>
+                <li>Process optimization</li>
+                <li>Advanced analytics setup</li>
+                <li>Stakeholder training</li>
+                <li>Workflow standardization</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Deliverables:</strong>
+              <ul style={{ margin: '4px 0 0 0', paddingLeft: '16px' }}>
+                <li>Optimized reporting workflows</li>
+                <li>Executive dashboards</li>
+                <li>Automated reconciliation</li>
+                <li>Compliance frameworks</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Phase 3: Upgrade */}
+      <div style={{
+        position: 'relative'
+      }}>
+        <div style={{
+          position: 'absolute',
+          left: '-28px',
+          top: '8px',
+          width: '16px',
+          height: '16px',
+          borderRadius: '50%',
+          backgroundColor: '#7c3aed',
+          border: '3px solid white',
+          boxShadow: '0 0 0 2px #7c3aed'
+        }}></div>
+        <div style={{
+          backgroundColor: '#faf5ff',
+          border: '1px solid #d8b4fe',
+          borderRadius: '8px',
+          padding: '16px',
+          marginLeft: '8px'
+        }}>
+          <div style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            marginBottom: '8px'
+          }}>
+            <h4 style={{ margin: 0, color: '#7c3aed', fontSize: '16px' }}>Phase 3: Upgrade (Months 12+)</h4>
+            <span style={{ fontSize: '12px', color: '#7c3aed', fontWeight: '500' }}>AI-enabled operations</span>
+          </div>
+          <p style={{ margin: '0 0 12px 0', fontSize: '14px', color: '#6b21a8' }}>
+            Unlock advanced capabilities including AI-powered analytics and decision support
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', fontSize: '13px' }}>
+            <div>
+              <strong>Key Activities:</strong>
+              <ul style={{ margin: '4px 0 0 0', paddingLeft: '16px' }}>
+                <li>AI model deployment</li>
+                <li>Advanced analytics</li>
+                <li>Predictive capabilities</li>
+                <li>Continuous optimization</li>
+              </ul>
+            </div>
+            <div>
+              <strong>Deliverables:</strong>
+              <ul style={{ margin: '4px 0 0 0', paddingLeft: '16px' }}>
+                <li>AI-powered insights</li>
+                <li>Predictive analytics</li>
+                <li>Automated decision support</li>
+                <li>Strategic optimization</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Card>
+
+## Project Milestone Timeline
+
+<Card title="Implementation Milestones & Success Metrics" icon="flag-checkered">
+  <div style={{ padding: '16px 0' }}>
+    <div style={{
+      display: 'grid',
+      gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+      gap: '16px'
+    }}>
+      {/* Month 1-2 */}
+      <div style={{
+        border: '1px solid #e5e7eb',
+        borderRadius: '8px',
+        padding: '16px',
+        backgroundColor: '#f9fafb'
+      }}>
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          marginBottom: '12px'
+        }}>
+          <div style={{
+            width: '24px',
+            height: '24px',
+            borderRadius: '50%',
+            backgroundColor: '#059669',
+            color: 'white',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontSize: '12px',
+            fontWeight: 'bold',
+            marginRight: '8px'
+          }}>1</div>
+          <span style={{ fontSize: '14px', fontWeight: '600' }}>Months 1-2: Foundation</span>
+        </div>
+        <div style={{ fontSize: '13px', lineHeight: '1.4' }}>
+          <strong>Milestones:</strong>
+          <ul style={{ margin: '4px 0', paddingLeft: '16px' }}>
+            <li>System connections established</li>
+            <li>Initial data flows configured</li>
+            <li>Core team trained</li>
+          </ul>
+          <strong>Success Metrics:</strong>
+          <ul style={{ margin: '4px 0', paddingLeft: '16px' }}>
+            <li>95% data accuracy achieved</li>
+            <li>3+ systems integrated</li>
+            <li>User adoption >80%</li>
+          </ul>
+        </div>
+      </div>
+      
+      {/* Month 3-4 */}
+      <div style={{
+        border: '1px solid #e5e7eb',
+        borderRadius: '8px',
+        padding: '16px',
+        backgroundColor: '#f9fafb'
+      }}>
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          marginBottom: '12px'
+        }}>
+          <div style={{
+            width: '24px',
+            height: '24px',
+            borderRadius: '50%',
+            backgroundColor: '#2563eb',
+            color: 'white',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontSize: '12px',
+            fontWeight: 'bold',
+            marginRight: '8px'
+          }}>2</div>
+          <span style={{ fontSize: '14px', fontWeight: '600' }}>Months 3-4: Optimization</span>
+        </div>
+        <div style={{ fontSize: '13px', lineHeight: '1.4' }}>
+          <strong>Milestones:</strong>
+          <ul style={{ margin: '4px 0', paddingLeft: '16px' }}>
+            <li>Automated reporting live</li>
+            <li>Dashboard deployment</li>
+            <li>Process optimization</li>
+          </ul>
+          <strong>Success Metrics:</strong>
+          <ul style={{ margin: '4px 0', paddingLeft: '16px' }}>
+            <li>50% reduction in manual work</li>
+            <li>Daily reporting capability</li>
+            <li>Stakeholder satisfaction >85%</li>
+          </ul>
+        </div>
+      </div>
+      
+      {/* Month 5-6 */}
+      <div style={{
+        border: '1px solid #e5e7eb',
+        borderRadius: '8px',
+        padding: '16px',
+        backgroundColor: '#f9fafb'
+      }}>
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          marginBottom: '12px'
+        }}>
+          <div style={{
+            width: '24px',
+            height: '24px',
+            borderRadius: '50%',
+            backgroundColor: '#7c3aed',
+            color: 'white',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontSize: '12px',
+            fontWeight: 'bold',
+            marginRight: '8px'
+          }}>3</div>
+          <span style={{ fontSize: '14px', fontWeight: '600' }}>Months 5-6: Enhancement</span>
+        </div>
+        <div style={{ fontSize: '13px', lineHeight: '1.4' }}>
+          <strong>Milestones:</strong>
+          <ul style={{ margin: '4px 0', paddingLeft: '16px' }}>
+            <li>Advanced analytics deployed</li>
+            <li>Compliance automation</li>
+            <li>Full stakeholder adoption</li>
+          </ul>
+          <strong>Success Metrics:</strong>
+          <ul style={{ margin: '4px 0', paddingLeft: '16px' }}>
+            <li>75% faster reporting cycles</li>
+            <li>Zero manual reconciliation</li>
+            <li>ROI targets achieved</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</Card>
+
+## AI Readiness Progression Timeline
+
+<Card title="AI Enablement Roadmap" icon="brain">
+  ```mermaid
+  gantt
+    title AI Readiness Implementation Timeline
+    dateFormat  YYYY-MM-DD
+    section Data Foundation
+    Data Integration     :done, foundation, 2024-01-01, 2024-03-01
+    Data Quality Setup   :done, quality, 2024-02-01, 2024-04-01
+    Governance Framework :active, governance, 2024-03-01, 2024-05-01
+    
+    section Analytics Platform
+    Feature Store Setup  :analytics1, 2024-04-01, 2024-06-01
+    ML Pipeline Development :analytics2, 2024-05-01, 2024-07-01
+    Model Training Infrastructure :analytics3, 2024-06-01, 2024-08-01
+    
+    section AI Applications
+    Operations AI (L1)   :ai1, 2024-07-01, 2024-09-01
+    Finance/IR AI (L2)   :ai2, 2024-08-01, 2024-10-01
+    Investment AI (L3)   :ai3, 2024-09-01, 2024-12-01
+    
+    section Optimization
+    Model Monitoring     :monitor, 2024-10-01, 2024-11-01
+    Performance Tuning   :tune, 2024-11-01, 2024-12-01
+    Scale & Expand       :scale, 2024-12-01, 2025-02-01
+  ```
+</Card>
+
+## Change Management Timeline
+
+<Card title="Organizational Transformation Schedule" icon="users">
+  <div style={{ padding: '16px 0' }}>
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '16px'
+    }}>
+      {/* Pre-Implementation */}
+      <div style={{
+        display: 'flex',
+        alignItems: 'flex-start',
+        gap: '16px',
+        padding: '16px',
+        backgroundColor: '#fef3c7',
+        border: '1px solid #fbbf24',
+        borderRadius: '8px'
+      }}>
+        <div style={{
+          minWidth: '80px',
+          fontSize: '12px',
+          fontWeight: '600',
+          color: '#92400e',
+          textAlign: 'center'
+        }}>
+          PRE-LAUNCH<br/>
+          (Weeks -4 to 0)
+        </div>
+        <div style={{ flex: 1 }}>
+          <h4 style={{ margin: '0 0 8px 0', fontSize: '14px', color: '#92400e' }}>Stakeholder Preparation</h4>
+          <div style={{ fontSize: '13px', color: '#92400e' }}>
+            • Executive alignment and communication strategy<br/>
+            • Team role definitions and RACI matrix<br/>
+            • Training material development<br/>
+            • Change champion identification
+          </div>
+        </div>
+      </div>
+      
+      {/* Weeks 1-4 */}
+      <div style={{
+        display: 'flex',
+        alignItems: 'flex-start',
+        gap: '16px',
+        padding: '16px',
+        backgroundColor: '#dbeafe',
+        border: '1px solid #3b82f6',
+        borderRadius: '8px'
+      }}>
+        <div style={{
+          minWidth: '80px',
+          fontSize: '12px',
+          fontWeight: '600',
+          color: '#1e40af',
+          textAlign: 'center'
+        }}>
+          WEEKS 1-4<br/>
+          (Launch)
+        </div>
+        <div style={{ flex: 1 }}>
+          <h4 style={{ margin: '0 0 8px 0', fontSize: '14px', color: '#1e40af' }}>Initial Adoption</h4>
+          <div style={{ fontSize: '13px', color: '#1e40af' }}>
+            • Core team onboarding and intensive training<br/>
+            • Pilot workflows with select user groups<br/>
+            • Daily check-ins and rapid issue resolution<br/>
+            • Early wins communication and celebration
+          </div>
+        </div>
+      </div>
+      
+      {/* Weeks 5-12 */}
+      <div style={{
+        display: 'flex',
+        alignItems: 'flex-start',
+        gap: '16px',
+        padding: '16px',
+        backgroundColor: '#dcfce7',
+        border: '1px solid #16a34a',
+        borderRadius: '8px'
+      }}>
+        <div style={{
+          minWidth: '80px',
+          fontSize: '12px',
+          fontWeight: '600',
+          color: '#15803d',
+          textAlign: 'center'
+        }}>
+          WEEKS 5-12<br/>
+          (Expansion)
+        </div>
+        <div style={{ flex: 1 }}>
+          <h4 style={{ margin: '0 0 8px 0', fontSize: '14px', color: '#15803d' }}>Scaled Rollout</h4>
+          <div style={{ fontSize: '13px', color: '#15803d' }}>
+            • Phased rollout to all user groups<br/>
+            • Process refinement and optimization<br/>
+            • Advanced feature training<br/>
+            • Adoption metrics tracking and reporting
+          </div>
+        </div>
+      </div>
+      
+      {/* Weeks 13+ */}
+      <div style={{
+        display: 'flex',
+        alignItems: 'flex-start',
+        gap: '16px',
+        padding: '16px',
+        backgroundColor: '#f3e8ff',
+        border: '1px solid #8b5cf6',
+        borderRadius: '8px'
+      }}>
+        <div style={{
+          minWidth: '80px',
+          fontSize: '12px',
+          fontWeight: '600',
+          color: '#7c2d12',
+          textAlign: 'center'
+        }}>
+          WEEKS 13+<br/>
+          (Optimization)
+        </div>
+        <div style={{ flex: 1 }}>
+          <h4 style={{ margin: '0 0 8px 0', fontSize: '14px', color: '#7c2d12' }}>Continuous Improvement</h4>
+          <div style={{ fontSize: '13px', color: '#7c2d12' }}>
+            • Performance monitoring and optimization<br/>
+            • Advanced capability enablement<br/>
+            • User feedback integration<br/>
+            • Success measurement and ROI validation
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Card>

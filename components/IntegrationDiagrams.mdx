@@ -1,0 +1,360 @@
+---
+title: "Integration Architecture Diagrams"
+description: "Visual representations of Amos system integration and data flow"
+---
+
+import { Card } from '@mintlify/components'
+
+## System Integration Overview
+
+<Card title="Amos Integration Architecture" icon="sitemap">
+  ```mermaid
+  graph TB
+    subgraph "Fund Operations"
+      FA[Fund Admin System]
+      CRM[CRM Platform]
+      PM[Portfolio Management]
+      ACC[Accounting System]
+    end
+    
+    subgraph "Amos Data Platform"
+      CONN[Data Connectors]
+      PIPE[Data Pipelines]
+      STORE[Unified Data Store]
+      API[Analytics API]
+    end
+    
+    subgraph "Analytics & Reporting"
+      DASH[Executive Dashboards]
+      REP[Investor Reports]
+      COMP[Compliance Reports]
+      AI[AI/ML Models]
+    end
+    
+    FA --> CONN
+    CRM --> CONN
+    PM --> CONN
+    ACC --> CONN
+    
+    CONN --> PIPE
+    PIPE --> STORE
+    STORE --> API
+    
+    API --> DASH
+    API --> REP
+    API --> COMP
+    API --> AI
+    
+    style STORE fill:#e1f5fe
+    style API fill:#f3e5f5
+    style DASH fill:#e8f5e8
+  ```
+</Card>
+
+## Data Flow Architecture
+
+<Card title="End-to-End Data Flow" icon="flow-chart">
+  ```mermaid
+  flowchart LR
+    subgraph "Source Systems"
+      S1[Fund Admin]
+      S2[CRM]
+      S3[Portfolio Mgmt]
+      S4[Market Data]
+    end
+    
+    subgraph "Ingestion Layer"
+      C1[API Connectors]
+      C2[File Processors]
+      C3[Real-time Streams]
+    end
+    
+    subgraph "Processing Layer"
+      T1[Data Validation]
+      T2[Transformation]
+      T3[Reconciliation]
+      T4[Quality Checks]
+    end
+    
+    subgraph "Storage Layer"
+      D1[Raw Data Lake]
+      D2[Curated Data]
+      D3[Analytics Store]
+    end
+    
+    subgraph "Consumption Layer"
+      A1[Dashboards]
+      A2[Reports]
+      A3[APIs]
+      A4[AI Models]
+    end
+    
+    S1 --> C1
+    S2 --> C1
+    S3 --> C2
+    S4 --> C3
+    
+    C1 --> T1
+    C2 --> T1
+    C3 --> T1
+    
+    T1 --> T2
+    T2 --> T3
+    T3 --> T4
+    
+    T4 --> D1
+    D1 --> D2
+    D2 --> D3
+    
+    D3 --> A1
+    D3 --> A2
+    D3 --> A3
+    D3 --> A4
+    
+    style D2 fill:#e1f5fe
+    style T3 fill:#fff3e0
+    style A4 fill:#f3e5f5
+  ```
+</Card>
+
+## Deployment Architecture Options
+
+<Card title="Cloud Deployment Architecture" icon="cloud">
+  ```mermaid
+  graph TB
+    subgraph "Client Environment"
+      VPN[VPN Gateway]
+      FW[Firewall]
+    end
+    
+    subgraph "Cloud Infrastructure"
+      subgraph "Compute Layer"
+        K8S[Kubernetes Cluster]
+        WORK[Worker Nodes]
+      end
+      
+      subgraph "Data Layer"
+        DB[(Primary Database)]
+        CACHE[(Redis Cache)]
+        BLOB[Object Storage]
+      end
+      
+      subgraph "Security Layer"
+        IAM[Identity & Access]
+        VAULT[Secrets Management]
+        AUDIT[Audit Logging]
+      end
+    end
+    
+    subgraph "Monitoring & Operations"
+      MON[Monitoring]
+      LOG[Centralized Logging]
+      ALERT[Alerting]
+    end
+    
+    VPN --> FW
+    FW --> K8S
+    K8S --> WORK
+    WORK --> DB
+    WORK --> CACHE
+    WORK --> BLOB
+    
+    IAM --> WORK
+    VAULT --> WORK
+    AUDIT --> LOG
+    
+    WORK --> MON
+    MON --> ALERT
+    
+    style K8S fill:#e3f2fd
+    style IAM fill:#fff3e0
+    style AUDIT fill:#f3e5f5
+  ```
+</Card>
+
+<Card title="On-Premise Deployment Architecture" icon="server">
+  ```mermaid
+  graph TB
+    subgraph "Corporate Network"
+      LB[Load Balancer]
+      FW[Firewall]
+    end
+    
+    subgraph "Amos Infrastructure"
+      subgraph "Application Tier"
+        APP1[App Server 1]
+        APP2[App Server 2]
+        APP3[App Server 3]
+      end
+      
+      subgraph "Data Tier"
+        DB1[(Primary DB)]
+        DB2[(Replica DB)]
+        FS[File Storage]
+      end
+      
+      subgraph "Processing Tier"
+        PROC1[Processing Node 1]
+        PROC2[Processing Node 2]
+        QUEUE[Message Queue]
+      end
+    end
+    
+    subgraph "Management & Security"
+      BACKUP[Backup System]
+      MON[Monitoring]
+      SEC[Security Controls]
+    end
+    
+    LB --> FW
+    FW --> APP1
+    FW --> APP2
+    FW --> APP3
+    
+    APP1 --> DB1
+    APP2 --> DB1
+    APP3 --> DB1
+    DB1 --> DB2
+    
+    APP1 --> QUEUE
+    QUEUE --> PROC1
+    QUEUE --> PROC2
+    
+    PROC1 --> FS
+    PROC2 --> FS
+    
+    DB1 --> BACKUP
+    APP1 --> MON
+    FW --> SEC
+    
+    style APP1 fill:#e8f5e8
+    style DB1 fill:#e1f5fe
+    style SEC fill:#fff3e0
+  ```
+</Card>
+
+## Security Architecture
+
+<Card title="Security & Compliance Framework" icon="shield-check">
+  ```mermaid
+  graph TB
+    subgraph "External Access"
+      USER[Fund Users]
+      API_CLIENT[API Clients]
+      ADMIN[Administrators]
+    end
+    
+    subgraph "Security Perimeter"
+      WAF[Web Application Firewall]
+      LB[Load Balancer with SSL]
+      AUTH[Authentication Gateway]
+    end
+    
+    subgraph "Application Security"
+      RBAC[Role-Based Access Control]
+      AUTHZ[Authorization Engine]
+      AUDIT[Audit Logging]
+    end
+    
+    subgraph "Data Security"
+      ENCRYPT[Encryption at Rest]
+      TLS[Encryption in Transit]
+      MASK[Data Masking]
+      BACKUP[Encrypted Backups]
+    end
+    
+    subgraph "Infrastructure Security"
+      NET_SEG[Network Segmentation]
+      VULN[Vulnerability Scanning]
+      PATCH[Patch Management]
+      MON[Security Monitoring]
+    end
+    
+    USER --> WAF
+    API_CLIENT --> WAF
+    ADMIN --> WAF
+    
+    WAF --> LB
+    LB --> AUTH
+    AUTH --> RBAC
+    RBAC --> AUTHZ
+    
+    AUTHZ --> ENCRYPT
+    AUTHZ --> TLS
+    AUTHZ --> MASK
+    
+    ENCRYPT --> BACKUP
+    TLS --> NET_SEG
+    MASK --> VULN
+    
+    VULN --> PATCH
+    PATCH --> MON
+    MON --> AUDIT
+    
+    style AUTH fill:#fff3e0
+    style ENCRYPT fill:#f3e5f5
+    style MON fill:#e8f5e8
+  ```
+</Card>
+
+## AI/ML Architecture Integration
+
+<Card title="AI-Ready Data Architecture" icon="brain">
+  ```mermaid
+  graph TB
+    subgraph "Data Sources"
+      FUND[Fund Data]
+      MARKET[Market Data]
+      ALT[Alternative Data]
+    end
+    
+    subgraph "Data Platform"
+      LAKE[Data Lake]
+      WAREHOUSE[Data Warehouse]
+      FEATURE[Feature Store]
+    end
+    
+    subgraph "ML Platform"
+      TRAIN[Model Training]
+      SERVE[Model Serving]
+      MONITOR[Model Monitoring]
+    end
+    
+    subgraph "AI Applications"
+      RISK[Risk Analytics]
+      PERF[Performance Attribution]
+      FORECAST[Forecasting]
+      NLP[Document Analysis]
+    end
+    
+    subgraph "Governance"
+      LINEAGE[Data Lineage]
+      QUALITY[Data Quality]
+      PRIVACY[Privacy Controls]
+    end
+    
+    FUND --> LAKE
+    MARKET --> LAKE
+    ALT --> LAKE
+    
+    LAKE --> WAREHOUSE
+    WAREHOUSE --> FEATURE
+    
+    FEATURE --> TRAIN
+    TRAIN --> SERVE
+    SERVE --> MONITOR
+    
+    SERVE --> RISK
+    SERVE --> PERF
+    SERVE --> FORECAST
+    SERVE --> NLP
+    
+    LAKE --> LINEAGE
+    WAREHOUSE --> QUALITY
+    FEATURE --> PRIVACY
+    
+    style FEATURE fill:#e1f5fe
+    style SERVE fill:#f3e5f5
+    style LINEAGE fill:#e8f5e8
+  ```
+</Card>

@@ -1,0 +1,226 @@
+---
+title: "Metric Card Component"
+description: "Reusable metric display component for business value presentations"
+---
+
+import { Card, CardGroup } from '@mintlify/components'
+
+## ROI Metric Card
+
+<Card title="ROI Impact" icon="trending-up">
+  <div style={{
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '12px',
+    padding: '16px 0'
+  }}>
+    <div style={{
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      borderBottom: '1px solid #e5e7eb',
+      paddingBottom: '8px'
+    }}>
+      <span style={{ fontSize: '14px', color: '#6b7280' }}>Annual Savings</span>
+      <span style={{ fontSize: '20px', fontWeight: 'bold', color: '#059669' }}>$500K-2M</span>
+    </div>
+    <div style={{
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      borderBottom: '1px solid #e5e7eb',
+      paddingBottom: '8px'
+    }}>
+      <span style={{ fontSize: '14px', color: '#6b7280' }}>Payback Period</span>
+      <span style={{ fontSize: '20px', fontWeight: 'bold', color: '#059669' }}>6-12 months</span>
+    </div>
+    <div style={{
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center'
+    }}>
+      <span style={{ fontSize: '14px', color: '#6b7280' }}>24-Month ROI</span>
+      <span style={{ fontSize: '20px', fontWeight: 'bold', color: '#059669' }}>200-400%</span>
+    </div>
+  </div>
+</Card>
+
+## Before/After Comparison Card
+
+<Card title="Operational Transformation" icon="refresh">
+  <div style={{
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr',
+    gap: '24px',
+    padding: '16px 0'
+  }}>
+    <div>
+      <h4 style={{ margin: '0 0 12px 0', color: '#dc2626', fontSize: '16px' }}>Before Amos</h4>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <span style={{ fontSize: '14px' }}>Monthly Reporting</span>
+          <span style={{ fontSize: '14px', color: '#dc2626' }}>40 hours</span>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <span style={{ fontSize: '14px' }}>Data Reconciliation</span>
+          <span style={{ fontSize: '14px', color: '#dc2626' }}>20 hours</span>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <span style={{ fontSize: '14px' }}>Audit Prep</span>
+          <span style={{ fontSize: '14px', color: '#dc2626' }}>160 hours/qtr</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4 style={{ margin: '0 0 12px 0', color: '#059669', fontSize: '16px' }}>After Amos</h4>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <span style={{ fontSize: '14px' }}>Monthly Reporting</span>
+          <span style={{ fontSize: '14px', color: '#059669' }}>10 hours (-75%)</span>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <span style={{ fontSize: '14px' }}>Data Reconciliation</span>
+          <span style={{ fontSize: '14px', color: '#059669' }}>2 hours (-90%)</span>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <span style={{ fontSize: '14px' }}>Audit Prep</span>
+          <span style={{ fontSize: '14px', color: '#059669' }}>40 hours/qtr (-75%)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</Card>
+
+## Performance Indicator Card
+
+<Card title="Key Performance Indicators" icon="chart-line">
+  <div style={{
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+    gap: '16px',
+    padding: '16px 0'
+  }}>
+    <div style={{
+      textAlign: 'center',
+      padding: '16px',
+      backgroundColor: '#f0fdf4',
+      borderRadius: '8px',
+      border: '1px solid #bbf7d0'
+    }}>
+      <div style={{ fontSize: '32px', fontWeight: 'bold', color: '#059669' }}>75%</div>
+      <div style={{ fontSize: '14px', color: '#065f46', marginTop: '4px' }}>Faster Reporting</div>
+    </div>
+    <div style={{
+      textAlign: 'center',
+      padding: '16px',
+      backgroundColor: '#eff6ff',
+      borderRadius: '8px',
+      border: '1px solid #bfdbfe'
+    }}>
+      <div style={{ fontSize: '32px', fontWeight: 'bold', color: '#2563eb' }}>90%</div>
+      <div style={{ fontSize: '14px', color: '#1e40af', marginTop: '4px' }}>Data Accuracy</div>
+    </div>
+    <div style={{
+      textAlign: 'center',
+      padding: '16px',
+      backgroundColor: '#fefce8',
+      borderRadius: '8px',
+      border: '1px solid #fde047'
+    }}>
+      <div style={{ fontSize: '32px', fontWeight: 'bold', color: '#ca8a04' }}>50%</div>
+      <div style={{ fontSize: '14px', color: '#a16207', marginTop: '4px' }}>Cost Reduction</div>
+    </div>
+    <div style={{
+      textAlign: 'center',
+      padding: '16px',
+      backgroundColor: '#fdf2f8',
+      borderRadius: '8px',
+      border: '1px solid #fbcfe8'
+    }}>
+      <div style={{ fontSize: '32px', fontWeight: 'bold', color: '#be185d' }}>60%</div>
+      <div style={{ fontSize: '14px', color: '#9d174d', marginTop: '4px' }}>Faster AI Delivery</div>
+    </div>
+  </div>
+</Card>
+
+## AI Readiness Progress Card
+
+<Card title="AI Readiness Progression" icon="brain">
+  <div style={{ padding: '16px 0' }}>
+    <div style={{
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      marginBottom: '16px'
+    }}>
+      <span style={{ fontSize: '14px', fontWeight: '500' }}>Current State → Target State</span>
+      <span style={{ fontSize: '14px', color: '#059669' }}>6-12 months</span>
+    </div>
+    
+    <div style={{
+      display: 'flex',
+      alignItems: 'center',
+      gap: '12px',
+      marginBottom: '12px'
+    }}>
+      <div style={{
+        width: '40px',
+        height: '40px',
+        borderRadius: '50%',
+        backgroundColor: '#dc2626',
+        color: 'white',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        fontSize: '14px',
+        fontWeight: 'bold'
+      }}>L0</div>
+      <div style={{ flex: 1 }}>
+        <div style={{ fontSize: '14px', fontWeight: '500' }}>Fragmented Data</div>
+        <div style={{ fontSize: '12px', color: '#6b7280' }}>Siloed systems, manual processes</div>
+      </div>
+    </div>
+    
+    <div style={{
+      height: '2px',
+      backgroundColor: '#e5e7eb',
+      margin: '8px 20px',
+      position: 'relative'
+    }}>
+      <div style={{
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        backgroundColor: '#059669',
+        color: 'white',
+        padding: '2px 8px',
+        borderRadius: '4px',
+        fontSize: '10px'
+      }}>AMOS</div>
+    </div>
+    
+    <div style={{
+      display: 'flex',
+      alignItems: 'center',
+      gap: '12px'
+    }}>
+      <div style={{
+        width: '40px',
+        height: '40px',
+        borderRadius: '50%',
+        backgroundColor: '#059669',
+        color: 'white',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        fontSize: '14px',
+        fontWeight: 'bold'
+      }}>L3</div>
+      <div style={{ flex: 1 }}>
+        <div style={{ fontSize: '14px', fontWeight: '500' }}>AI-Ready Platform</div>
+        <div style={{ fontSize: '12px', color: '#6b7280' }}>Governed feature stores, ML pipelines</div>
+      </div>
+    </div>
+  </div>
+</Card>

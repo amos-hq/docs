@@ -1,0 +1,190 @@
+---
+title: "ROI Calculator Component"
+description: "Interactive ROI calculator for fund leaders to estimate Amos value"
+---
+
+import { Card } from '@mintlify/components'
+
+## Interactive ROI Calculator
+
+<Card title="Estimate Your ROI with Amos" icon="calculator">
+  <div style={{ padding: '20px 0' }}>
+    <div style={{
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr',
+      gap: '24px',
+      marginBottom: '24px'
+    }}>
+      <div>
+        <h4 style={{ margin: '0 0 16px 0', fontSize: '16px' }}>Current Operations</h4>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+          <div>
+            <label style={{ fontSize: '14px', color: '#374151', display: 'block', marginBottom: '4px' }}>
+              Monthly Reporting Hours
+            </label>
+            <input 
+              type="number" 
+              placeholder="40" 
+              style={{
+                width: '100%',
+                padding: '8px 12px',
+                border: '1px solid #d1d5db',
+                borderRadius: '6px',
+                fontSize: '14px'
+              }}
+            />
+          </div>
+          <div>
+            <label style={{ fontSize: '14px', color: '#374151', display: 'block', marginBottom: '4px' }}>
+              Data Reconciliation Hours/Month
+            </label>
+            <input 
+              type="number" 
+              placeholder="20" 
+              style={{
+                width: '100%',
+                padding: '8px 12px',
+                border: '1px solid #d1d5db',
+                borderRadius: '6px',
+                fontSize: '14px'
+              }}
+            />
+          </div>
+          <div>
+            <label style={{ fontSize: '14px', color: '#374151', display: 'block', marginBottom: '4px' }}>
+              Average Hourly Cost ($)
+            </label>
+            <input 
+              type="number" 
+              placeholder="150" 
+              style={{
+                width: '100%',
+                padding: '8px 12px',
+                border: '1px solid #d1d5db',
+                borderRadius: '6px',
+                fontSize: '14px'
+              }}
+            />
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <h4 style={{ margin: '0 0 16px 0', fontSize: '16px' }}>Projected Savings</h4>
+        <div style={{
+          backgroundColor: '#f0fdf4',
+          border: '1px solid #bbf7d0',
+          borderRadius: '8px',
+          padding: '16px'
+        }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+            <span style={{ fontSize: '14px' }}>Monthly Time Savings</span>
+            <span style={{ fontSize: '14px', fontWeight: 'bold', color: '#059669' }}>45 hours</span>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+            <span style={{ fontSize: '14px' }}>Monthly Cost Savings</span>
+            <span style={{ fontSize: '14px', fontWeight: 'bold', color: '#059669' }}>$6,750</span>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+            <span style={{ fontSize: '14px' }}>Annual Savings</span>
+            <span style={{ fontSize: '16px', fontWeight: 'bold', color: '#059669' }}>$81,000</span>
+          </div>
+          <hr style={{ margin: '12px 0', border: 'none', borderTop: '1px solid #bbf7d0' }} />
+          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <span style={{ fontSize: '14px', fontWeight: '500' }}>3-Year ROI</span>
+            <span style={{ fontSize: '18px', fontWeight: 'bold', color: '#059669' }}>324%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div style={{
+      backgroundColor: '#eff6ff',
+      border: '1px solid #bfdbfe',
+      borderRadius: '8px',
+      padding: '16px',
+      marginTop: '16px'
+    }}>
+      <h5 style={{ margin: '0 0 8px 0', color: '#1e40af', fontSize: '14px' }}>Additional Benefits Not Quantified Above:</h5>
+      <ul style={{ margin: '0', paddingLeft: '20px', fontSize: '14px', color: '#1e40af' }}>
+        <li>Improved decision-making speed and quality</li>
+        <li>Enhanced investor relations and fundraising capability</li>
+        <li>Reduced compliance and audit preparation time</li>
+        <li>AI readiness and future innovation enablement</li>
+        <li>Zero vendor lock-in risk and strategic control</li>
+      </ul>
+    </div>
+  </div>
+</Card>
+
+## Cost-Benefit Breakdown
+
+<Card title="Investment vs. Returns Analysis" icon="balance-scale">
+  <div style={{ padding: '16px 0' }}>
+    <div style={{
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr',
+      gap: '24px'
+    }}>
+      <div>
+        <h4 style={{ margin: '0 0 12px 0', color: '#dc2626', fontSize: '16px' }}>Investment Required</h4>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '4px', borderBottom: '1px solid #fee2e2' }}>
+            <span style={{ fontSize: '14px' }}>Implementation</span>
+            <span style={{ fontSize: '14px', color: '#dc2626' }}>$150K-500K</span>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '4px', borderBottom: '1px solid #fee2e2' }}>
+            <span style={{ fontSize: '14px' }}>Annual Operations</span>
+            <span style={{ fontSize: '14px', color: '#dc2626' }}>$50K-150K</span>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '4px', borderBottom: '1px solid #fee2e2' }}>
+            <span style={{ fontSize: '14px' }}>Training & Change Mgmt</span>
+            <span style={{ fontSize: '14px', color: '#dc2626' }}>$25K-75K</span>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 'bold', marginTop: '8px' }}>
+            <span style={{ fontSize: '14px' }}>Total 3-Year Cost</span>
+            <span style={{ fontSize: '16px', color: '#dc2626' }}>$375K-950K</span>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <h4 style={{ margin: '0 0 12px 0', color: '#059669', fontSize: '16px' }}>Value Generated</h4>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '4px', borderBottom: '1px solid #d1fae5' }}>
+            <span style={{ fontSize: '14px' }}>Operational Savings</span>
+            <span style={{ fontSize: '14px', color: '#059669' }}>$1.5M-6M</span>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '4px', borderBottom: '1px solid #d1fae5' }}>
+            <span style={{ fontSize: '14px' }}>Revenue Enhancement</span>
+            <span style={{ fontSize: '14px', color: '#059669' }}>$600K-3M</span>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '4px', borderBottom: '1px solid #d1fae5' }}>
+            <span style={{ fontSize: '14px' }}>Risk Mitigation</span>
+            <span style={{ fontSize: '14px', color: '#059669' }}>$300K-1.5M</span>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 'bold', marginTop: '8px' }}>
+            <span style={{ fontSize: '14px' }}>Total 3-Year Value</span>
+            <span style={{ fontSize: '16px', color: '#059669' }}>$2.4M-10.5M</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div style={{
+      marginTop: '20px',
+      padding: '16px',
+      backgroundColor: '#f8fafc',
+      border: '1px solid #e2e8f0',
+      borderRadius: '8px',
+      textAlign: 'center'
+    }}>
+      <div style={{ fontSize: '18px', fontWeight: 'bold', color: '#1e293b', marginBottom: '4px' }}>
+        Net ROI Range: 254% - 1,105%
+      </div>
+      <div style={{ fontSize: '14px', color: '#64748b' }}>
+        Payback period: 6-12 months | Break-even: Month 8-14
+      </div>
+    </div>
+  </div>
+</Card>
