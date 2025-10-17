@@ -3,7 +3,7 @@
   "theme": "mint",
   "name": "AMOS Data Platform Documentation",
   "colors": {
-    "primary": "#16A34A",
+    "primary": "#6265FB",
     "light": "#07C983",
     "dark": "#15803D"
   },
@@ -14,20 +14,15 @@
         "tab": "Business documentation",
         "groups": [
           {
-            "group": "Introduction",
+            "group": "Overview & Value",
             "pages": [
-              "index"
+              "index",
+              "fund-leaders/business-value",
+              "fund-leaders/open-source-assurance/index"
             ]
           },
           {
-            "group": "Executive Overview",
-            "pages": [
-              "fund-leaders/index",
-              "fund-leaders/business-value"
-            ]
-          },
-          {
-            "group": "Use Cases & Applications",
+            "group": "Use Cases",
             "pages": [
               "fund-leaders/use-cases/index",
               "fund-leaders/use-cases/private-equity",
@@ -36,55 +31,11 @@
             ]
           },
           {
-            "group": "Integration & Implementation",
-            "pages": [
-              "fund-leaders/integration/index",
-              "fund-leaders/integration/existing-systems",
-              "fund-leaders/integration/deployment-options"
-            ]
-          },
-          {
             "group": "Getting Started",
             "pages": [
               "fund-leaders/implementation/index",
-              "fund-leaders/implementation/getting-started",
-              "fund-leaders/implementation/team-requirements",
-              "fund-leaders/implementation/change-management"
-            ]
-          },
-          {
-            "group": "Change Management",
-            "pages": [
-              "fund-leaders/change-management/index",
-              "fund-leaders/change-management/adapt-align-upgrade",
-              "fund-leaders/change-management/roles-responsibilities",
-              "fund-leaders/change-management/adoption-metrics"
-            ]
-          },
-          {
-            "group": "Open Source Assurance",
-            "pages": [
-              "fund-leaders/open-source-assurance/index",
-              "fund-leaders/open-source-assurance/vendor-lock-in",
-              "fund-leaders/open-source-assurance/auditability",
-              "fund-leaders/open-source-assurance/governance"
-            ]
-          },
-          {
-            "group": "AI Readiness & Enablement",
-            "pages": [
-              "fund-leaders/ai-readiness/index",
               "fund-leaders/ai-readiness/readiness-model",
-              "fund-leaders/ai-readiness/use-cases",
-              "fund-leaders/ai-readiness/governance"
-            ]
-          },
-          {
-            "group": "Success Stories",
-            "pages": [
-              "fund-leaders/success-stories/index",
-              "fund-leaders/success-stories/case-study-1",
-              "fund-leaders/success-stories/case-study-2"
+              "fund-leaders/implementation/getting-started"
             ]
           }
         ]
