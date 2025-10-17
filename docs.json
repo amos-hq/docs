@@ -84,6 +84,24 @@
             ]
           },
           {
+            "group": "Change Management",
+            "pages": [
+              "fund-leaders/change-management/index",
+              "fund-leaders/change-management/adapt-align-upgrade",
+              "fund-leaders/change-management/roles-responsibilities",
+              "fund-leaders/change-management/adoption-metrics"
+            ]
+          },
+          {
+            "group": "Open Source Assurance",
+            "pages": [
+              "fund-leaders/open-source-assurance/index",
+              "fund-leaders/open-source-assurance/vendor-lock-in",
+              "fund-leaders/open-source-assurance/auditability",
+              "fund-leaders/open-source-assurance/governance"
+            ]
+          },
+          {
             "group": "Success Stories",
             "pages": [
               "fund-leaders/success-stories/index",
