@@ -1,0 +1,299 @@
+---
+title: "AI Readiness Model"
+description: "Assess your fund's AI maturity and plan your progression from fragmented data to AI-enabled operations"
+---
+
+import { Card, Cards } from 'nextra/components'
+import { Callout } from 'nextra/components'
+
+# AI Readiness Model
+
+Most funds exist somewhere on a spectrum from completely fragmented data operations to AI-ready unified platforms. Understanding where you currently stand—and what capabilities you need to develop—is essential for planning successful AI initiatives.
+
+Our AI Readiness Model defines four distinct levels (L0-L3) that represent the progression from data chaos to AI enablement. Each level builds on the previous one, creating a clear roadmap for transformation.
+
+## The Four Levels of AI Readiness
+
+### Level 0: Fragmented Data (Most Funds Start Here)
+
+<Card title="L0: Fragmented Data" icon="🔴">
+**Characteristics**: Data scattered across multiple systems with manual processes, inconsistent definitions, and limited integration.
+
+**Typical State**: Fund admin data in one system, portfolio tracking in spreadsheets, CRM in another tool, with manual reporting processes.
+
+**AI Capability**: None. Data quality and accessibility issues prevent any reliable AI implementation.
+</Card>
+
+**Common Challenges at L0:**
+- Investment data exists in fund administration systems but isn't easily accessible
+- Portfolio company information lives in spreadsheets with inconsistent formats
+- Market data comes from multiple vendors with different schemas
+- Reporting requires manual data gathering from multiple sources
+- No single source of truth for key metrics like IRR, MOIC, or portfolio valuations
+
+**Business Impact:**
+- Reporting cycles take weeks instead of days
+- Investment decisions based on incomplete or outdated information
+- Compliance reporting requires significant manual effort
+- Limited ability to identify portfolio-wide trends or risks
+
+### Level 1: Consolidated Data
+
+<Card title="L1: Consolidated Data" icon="🟡">
+**Characteristics**: Data from multiple sources brought together in a unified platform with basic standardization and quality controls.
+
+**Typical State**: Amos ingesting data from fund admin, portfolio systems, and market data with initial data models implemented.
+
+**AI Capability**: Basic analytics and reporting, simple predictive models for well-defined use cases.
+</Card>
+
+**Key Capabilities at L1:**
+- Automated data ingestion from primary fund systems
+- Standardized data models for core entities (funds, investments, investors)
+- Basic data quality monitoring and validation
+- Unified reporting across all data sources
+- Historical data preservation and accessibility
+
+**Progression Requirements:**
+- Implement Amos core data platform
+- Connect primary data sources (fund admin, portfolio management)
+- Establish basic data governance policies
+- Train team on unified data access patterns
+
+**Timeline**: Typically 3-6 months from L0
+
+### Level 2: Governed Data
+
+<Card title="L2: Governed Data" icon="🟠">
+**Characteristics**: Comprehensive data governance with role-based access, audit trails, and business-ready data models that support advanced analytics.
+
+**Typical State**: Full data lineage tracking, automated quality monitoring, and business users able to self-serve analytics needs.
+
+**AI Capability**: Production-ready AI for specific use cases like portfolio risk assessment, investor reporting automation, and basic due diligence support.
+</Card>
+
+**Key Capabilities at L2:**
+- Complete data lineage from source systems to business reports
+- Role-based access controls aligned with fund compliance requirements
+- Automated data quality monitoring with alerting
+- Business-friendly data models that non-technical users can query
+- Version-controlled data transformations and business logic
+
+**Progression Requirements:**
+- Implement comprehensive data governance framework
+- Establish role-based access controls and audit trails
+- Create business-user-friendly data models and interfaces
+- Develop data quality monitoring and alerting systems
+
+**Timeline**: Typically 6-12 months from L1
+
+### Level 3: AI-Ready Feature Stores
+
+<Card title="L3: AI-Ready Feature Stores" icon="🟢">
+**Characteristics**: Purpose-built feature engineering and model serving infrastructure that enables sophisticated AI applications across fund operations.
+
+**Typical State**: Real-time feature serving, A/B testing frameworks, and production AI systems supporting investment decisions and operational efficiency.
+
+**AI Capability**: Advanced AI applications including predictive due diligence, automated portfolio optimization, intelligent investor communications, and real-time risk monitoring.
+</Card>
+
+**Key Capabilities at L3:**
+- Real-time feature engineering and serving for AI models
+- A/B testing frameworks for AI-driven decision support
+- Model monitoring and performance tracking infrastructure
+- Automated model retraining and deployment pipelines
+- Integration with external AI services and custom model development
+
+**Progression Requirements:**
+- Implement feature store infrastructure for AI model serving
+- Develop model monitoring and management capabilities
+- Create A/B testing frameworks for AI applications
+- Establish MLOps practices for model lifecycle management
+
+**Timeline**: Typically 12-18 months from L2
+
+## Interactive AI Readiness Assessment
+
+Use this assessment to determine your current AI readiness level and identify the next steps for progression.
+
+<Callout type="info">
+**Assessment Instructions**: For each category below, select the statement that best describes your current state. Your overall readiness level is determined by your lowest-scoring category.
+</Callout>
+
+### Data Integration Assessment
+
+**L0 - Fragmented**: Data exists in separate systems with manual processes for combining information
+- Investment data requires manual export from fund admin systems
+- Portfolio tracking happens primarily in spreadsheets
+- Market data comes from multiple sources without integration
+- Reporting requires gathering data from 3+ different systems
+
+**L1 - Consolidated**: Basic data integration with some automation
+- Primary fund systems connected to unified platform
+- Automated data ingestion for core investment and fund data
+- Some standardization of data formats and definitions
+- Reporting can be generated from single system for most use cases
+
+**L2 - Governed**: Comprehensive integration with governance controls
+- All relevant data sources integrated with maintained lineage
+- Standardized data models across all business functions
+- Role-based access controls and audit trails implemented
+- Business users can self-serve most analytics needs
+
+**L3 - AI-Ready**: Real-time integration optimized for AI applications
+- Real-time or near-real-time data availability for AI systems
+- Feature engineering pipelines for model-ready data
+- Integration with external AI services and model serving infrastructure
+- Automated data quality monitoring optimized for AI requirements
+
+### Data Quality Assessment
+
+**L0 - Manual Quality Control**: Data quality managed through manual processes
+- Data quality issues discovered during reporting cycles
+- Manual validation of key metrics and calculations
+- Inconsistent data definitions across systems
+- Limited historical data quality tracking
+
+**L1 - Basic Monitoring**: Automated quality checks for core data
+- Automated validation of data completeness and basic formats
+- Standardized calculations for key fund metrics
+- Basic data quality dashboards and reporting
+- Historical data quality trends tracked
+
+**L2 - Comprehensive Governance**: Advanced quality monitoring with business rules
+- Business rule validation for complex fund operations logic
+- Data quality SLAs with automated alerting
+- Root cause analysis capabilities for quality issues
+- Data quality metrics integrated into business processes
+
+**L3 - AI-Optimized Quality**: Quality controls designed for AI model requirements
+- Statistical data quality monitoring for model inputs
+- Automated data drift detection for AI applications
+- Quality controls integrated into feature engineering pipelines
+- Model performance monitoring linked to data quality metrics
+
+### Governance and Compliance Assessment
+
+**L0 - Manual Compliance**: Compliance managed through manual processes and documentation
+- Audit trails maintained through manual documentation
+- Access controls managed at system level without centralized governance
+- Compliance reporting requires manual data gathering and validation
+- Limited ability to demonstrate data lineage for regulatory requirements
+
+**L1 - Basic Governance**: Foundational governance with automated audit trails
+- Automated audit trails for data access and modifications
+- Basic role-based access controls implemented
+- Standardized compliance reporting processes
+- Data lineage tracking for core business processes
+
+**L2 - Advanced Governance**: Comprehensive governance framework supporting business operations
+- Fine-grained access controls aligned with business roles and compliance requirements
+- Complete data lineage from source systems to business reports
+- Automated compliance reporting with validation and approval workflows
+- Version-controlled data transformations and business logic
+
+**L3 - AI Governance Ready**: Governance framework supporting AI applications and model management
+- AI-specific governance policies for model development and deployment
+- Automated bias detection and model fairness monitoring
+- Explainability frameworks for AI-driven decisions
+- Integration with MLOps practices for model lifecycle governance
+
+## Capability Gaps and Progression Paths
+
+Based on your assessment results, here are the typical capability gaps and recommended progression paths:
+
+### From L0 to L1: Foundation Building
+**Primary Focus**: Data consolidation and basic standardization
+
+**Key Initiatives**:
+- Implement Amos core platform with primary system integrations
+- Establish standardized data models for funds, investments, and investors
+- Create automated reporting for key fund metrics
+- Train team on unified data access patterns
+
+**Success Metrics**:
+- 80% reduction in manual data gathering for standard reports
+- Single source of truth established for core fund metrics
+- Automated daily/weekly reporting implemented
+- Team trained and actively using unified platform
+
+**Typical Timeline**: 3-6 months
+**Investment Level**: Moderate - primarily platform implementation and training
+
+### From L1 to L2: Governance Implementation
+**Primary Focus**: Data governance, quality controls, and business user enablement
+
+**Key Initiatives**:
+- Implement comprehensive data governance framework
+- Establish role-based access controls and audit trails
+- Create business-user-friendly analytics interfaces
+- Develop data quality monitoring and alerting systems
+
+**Success Metrics**:
+- Complete audit trail capability for regulatory requirements
+- Business users able to self-serve 70% of analytics needs
+- Data quality SLAs established and monitored
+- Compliance reporting fully automated
+
+**Typical Timeline**: 6-12 months from L1
+**Investment Level**: Significant - governance framework and business user training
+
+### From L2 to L3: AI Enablement
+**Primary Focus**: Feature engineering, model serving, and AI application development
+
+**Key Initiatives**:
+- Implement feature store infrastructure for AI model serving
+- Develop model monitoring and management capabilities
+- Create A/B testing frameworks for AI applications
+- Establish MLOps practices for model lifecycle management
+
+**Success Metrics**:
+- Production AI applications delivering measurable business value
+- Real-time feature serving for AI models implemented
+- Model performance monitoring and automated retraining operational
+- A/B testing framework supporting AI-driven decision making
+
+**Typical Timeline**: 12-18 months from L2
+**Investment Level**: High - specialized AI infrastructure and expertise
+
+## Recommended Next Steps by Current Level
+
+### If You're at L0 (Fragmented Data)
+1. **Immediate Priority**: Implement Amos core platform to consolidate primary data sources
+2. **Quick Wins**: Automate your most time-consuming manual reporting processes
+3. **Foundation Building**: Establish standardized data models for core business entities
+4. **Team Development**: Train key team members on unified data access patterns
+
+### If You're at L1 (Consolidated Data)
+1. **Governance Focus**: Implement role-based access controls and audit trail capabilities
+2. **Quality Improvement**: Establish automated data quality monitoring and alerting
+3. **User Enablement**: Create self-service analytics capabilities for business users
+4. **Compliance Readiness**: Automate regulatory and investor reporting processes
+
+### If You're at L2 (Governed Data)
+1. **AI Preparation**: Identify high-value AI use cases and begin feature engineering
+2. **Infrastructure Development**: Implement feature store and model serving capabilities
+3. **Experimentation Framework**: Establish A/B testing for AI-driven improvements
+4. **Expertise Building**: Develop internal AI/ML capabilities or partner with specialists
+
+### If You're at L3 (AI-Ready)
+1. **Scale AI Applications**: Expand successful AI use cases across fund operations
+2. **Advanced Capabilities**: Implement sophisticated AI applications like predictive due diligence
+3. **Continuous Improvement**: Optimize model performance and business impact
+4. **Innovation Leadership**: Explore cutting-edge AI applications for competitive advantage
+
+## Getting Professional Assessment
+
+While this self-assessment provides valuable insights, a professional evaluation can identify specific opportunities and create a detailed roadmap for your fund's AI readiness journey.
+
+Our team can provide:
+- Detailed technical assessment of your current data infrastructure
+- Custom roadmap with specific milestones and success criteria
+- ROI analysis for AI readiness investments
+- Implementation support and change management guidance
+
+[Schedule AI Readiness Consultation →](/contact)
+
+[Explore AI Use Cases →](/fund-leaders/ai-readiness/use-cases)
+
+[Review AI Governance Requirements →](/fund-leaders/ai-readiness/governance)

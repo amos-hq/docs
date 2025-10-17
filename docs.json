@@ -102,6 +102,15 @@
             ]
           },
           {
+            "group": "AI Readiness & Enablement",
+            "pages": [
+              "fund-leaders/ai-readiness/index",
+              "fund-leaders/ai-readiness/readiness-model",
+              "fund-leaders/ai-readiness/use-cases",
+              "fund-leaders/ai-readiness/governance"
+            ]
+          },
+          {
             "group": "Success Stories",
             "pages": [
               "fund-leaders/success-stories/index",
