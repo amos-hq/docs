@@ -1,0 +1,124 @@
+---
+title: "Deployment Options"
+---
+
+AMOS is infrastructure-agnostic and can run wherever your compliance or strategy requires.
+
+## Overview
+
+<Card>
+| Model | Typical context | Characteristics |
+|-------|------------------|-----------------|
+| **Cloud-native** | Modern data stack (Snowflake, BigQuery, Redshift) | Fastest implementation, managed scaling |
+| **Hybrid** | Sensitive data stays on-prem | Compute in cloud, custody stays internal |
+| **Fully self-hosted** | Regulated or private infrastructure mandates | Full control over infra, connectivity, and security posture |
+</Card>
+
+## Pros & Cons
+
+Each approach provides the same core functionality with different infrastructure and control models.
+
+import { IntegrationDiagrams } from '../../components/IntegrationDiagrams.mdx'
+
+<IntegrationDiagrams />
+
+### Cloud-Native (SaaS)
+**Best for**: Funds seeking rapid deployment with minimal IT overhead
+
+<CardGroup cols={2}>
+  <Card title="Benefits" icon="check-circle">
+    - Fastest time to value (2-4 weeks)
+    - Automatic updates and maintenance
+    - Scalable infrastructure
+    - Lower upfront costs
+  </Card>
+  <Card title="Considerations" icon="info-circle">
+    - Shared infrastructure model
+    - Standard security protocols
+    - Internet connectivity required
+    - Subscription-based pricing
+  </Card>
+</CardGroup>
+
+### Private Cloud
+**Best for**: Funds requiring dedicated infrastructure with cloud benefits
+
+<CardGroup cols={2}>
+  <Card title="Benefits" icon="check-circle">
+    - Dedicated infrastructure
+    - Enhanced security controls
+    - Customizable configurations
+    - Cloud scalability
+  </Card>
+  <Card title="Considerations" icon="info-circle">
+    - Higher infrastructure costs
+    - Longer implementation timeline
+    - Requires cloud expertise
+    - Custom security configurations
+  </Card>
+</CardGroup>
+
+### On-Premise
+**Best for**: Funds with strict data residency or air-gapped requirements
+
+<CardGroup cols={2}>
+  <Card title="Benefits" icon="check-circle">
+    - Complete data control
+    - Custom security implementations
+    - No external dependencies
+    - Regulatory compliance flexibility
+  </Card>
+  <Card title="Considerations" icon="info-circle">
+    - Significant infrastructure investment
+    - Internal IT management required
+    - Longer deployment timeline
+    - Manual update processes
+  </Card>
+</CardGroup>
+
+### Hybrid
+**Best for**: Funds with mixed requirements across different data types
+
+<CardGroup cols={2}>
+  <Card title="Benefits" icon="check-circle">
+    - Flexible data placement
+    - Optimized cost structure
+    - Gradual migration path
+    - Best of both worlds
+  </Card>
+  <Card title="Considerations" icon="info-circle">
+    - Complex architecture
+    - Integration challenges
+    - Multiple security models
+    - Coordinated management
+  </Card>
+</CardGroup>
+
+## Key Evaluation Criteria
+
+<Tabs>
+  <Tab title="Security Requirements">
+    - Data sensitivity levels
+    - Regulatory compliance needs
+    - Internal security policies
+    - Risk tolerance
+  </Tab>
+  <Tab title="Operational Factors">
+    - IT resource availability
+    - Implementation timeline
+    - Scalability requirements
+    - Integration complexity
+  </Tab>
+  <Tab title="Financial Considerations">
+    - Total cost of ownership
+    - Capital vs. operational expenses
+    - ROI timeline expectations
+    - Budget constraints
+  </Tab>
+</Tabs>
+
+## Next Steps
+
+<Note>
+Our team works with you to evaluate your specific requirements and recommend the optimal deployment approach for your fund's needs.
+</Note>

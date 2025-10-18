@@ -11,18 +11,25 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Business documentation",
+        "tab": "Overview",
         "groups": [
           {
-            "group": "Overview & Value",
+            "group": "Getting Started",
             "pages": [
               "index",
-              "fund-leaders/business-value",
-              "fund-leaders/open-source-assurance/index"
+              "key-benefits"
             ]
           },
           {
-            "group": "Use Cases",
+            "group": "Integration",
+            "pages": [
+              "integration/architecture",
+              "integration/deployment-options",
+              "integration/implementation-process"
+            ]
+          },
+          {
+            "group": "Use Cases & Applications",
             "pages": [
               "fund-leaders/use-cases/index",
               "fund-leaders/use-cases/private-equity",
@@ -31,11 +38,38 @@
             ]
           },
           {
-            "group": "Getting Started",
+            "group": "Change Management",
             "pages": [
-              "fund-leaders/implementation/index",
+              "fund-leaders/change-management/index",
+              "fund-leaders/change-management/adapt-align-upgrade",
+              "fund-leaders/change-management/roles-responsibilities",
+              "fund-leaders/change-management/adoption-metrics"
+            ]
+          },
+          {
+            "group": "Open Source Assurance",
+            "pages": [
+              "fund-leaders/open-source-assurance/index",
+              "fund-leaders/open-source-assurance/vendor-lock-in",
+              "fund-leaders/open-source-assurance/auditability",
+              "fund-leaders/open-source-assurance/governance"
+            ]
+          },
+          {
+            "group": "AI Readiness & Enablement",
+            "pages": [
+              "fund-leaders/ai-readiness/index",
               "fund-leaders/ai-readiness/readiness-model",
-              "fund-leaders/implementation/getting-started"
+              "fund-leaders/ai-readiness/use-cases",
+              "fund-leaders/ai-readiness/governance"
+            ]
+          },
+          {
+            "group": "Success Stories",
+            "pages": [
+              "fund-leaders/success-stories/index",
+              "fund-leaders/success-stories/case-study-1",
+              "fund-leaders/success-stories/case-study-2"
             ]
           }
         ]

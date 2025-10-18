@@ -1,101 +1,42 @@
 ---
-title: "AMOS Data Platform"
-description: "Unified data infrastructure for modern fund operations"
+title: "Introduction"
 ---
 
 import { Card, CardGroup } from 'nextra/components'
 
-AMOS is an open-source data platform designed specifically for fund operations, providing the unified data infrastructure that modern investment funds need to operate efficiently and make data-driven decisions.
+AMOS is an open-source data platform designed specifically for fund operations. It provides the unified data infrastructure that modern investment funds need to operate efficiently and make data-driven decisions.
 
-## Why AMOS?
+## Why funds use AMOS
 
-Investment funds face unique data challenges: fragmented systems, inconsistent definitions, manual processes, and the need for real-time insights across portfolio companies, investors, and market conditions. AMOS solves these challenges by creating a single source of truth for all fund-related data.
+Investment data is usually fragmented across accounting systems, CRMs, spreadsheets, fund administrators, and third-party providers. Definitions drift. Reconciliation is manual. Reporting is reactive. AMOS addresses this by creating a single governed layer of truth that can be trusted by investment, finance, and operations teams.
 
-<CardGroup cols={2}>
-  <Card title="Unified Data Layer" icon="link">
-    Consolidate data from fund administration, portfolio management, CRM, and market data sources into a single, queryable platform.
-  </Card>
-  
-  <Card title="Open Source Flexibility" icon="unlock">
-    Deploy on your infrastructure with full control over your data, customizations, and integrations. No vendor lock-in.
-  </Card>
-  
-  <Card title="Fund-Specific Models" icon="chart-bar">
-    Purpose-built data models for fund operations including LP management, portfolio tracking, and performance reporting.
-  </Card>
-  
-  <Card title="AI-Ready Foundation" icon="robot">
-    Clean, governed data that enables AI applications for due diligence, portfolio optimization, and operational efficiency.
-  </Card>
-</CardGroup>
+<Note>
+**Open source by design**: transparent code, auditable data handling, no vendor lock-in.
+</Note>
 
-## Get Started
+## How it works
 
-Explore how AMOS can transform your fund operations:
+At its core, AMOS is a modular data transformation framework that runs on any modern data platform, cloud or on-prem. It sits between source systems and consumption tools, ingesting, reconciling, and standardizing data into a clean operational layer.
 
-<CardGroup cols={2}>
-  <Card title="Executive Overview" icon="user-tie" href="/fund-leaders">
-    Understand the business value and strategic benefits of unified data infrastructure for fund operations.
-  </Card>
-  
-  <Card title="Use Cases" icon="briefcase" href="/fund-leaders/use-cases">
-    See how different fund types leverage AMOS for operational efficiency and better decision-making.
-  </Card>
-  
-  <Card title="Implementation Guide" icon="rocket" href="/fund-leaders/implementation">
-    Learn how to plan and execute your AMOS implementation with proven methodologies and best practices.
-  </Card>
-  
-  <Card title="AI Readiness" icon="brain" href="/fund-leaders/ai-readiness">
-    Discover how AMOS creates the data foundation necessary for successful AI initiatives in fund operations.
-  </Card>
-</CardGroup>
+<Card>
+```mermaid
+  graph TD
+    A1[Excel] --> B[AMOS Data Platform]
+    A2[CRM] --> B
+    A3[Fund Admin] --> B
+    A4[Portfolio Management] --> B
+    A5[More Sources...] --> B
+    B --> C1[Business Intelligence & Dashboards]
+    B --> C2[Internal Applications & Workflows]
+    B --> C3[Automated Reporting]
+    B --> C4[AI]
+```
+</Card>
 
-## Key Benefits
+## Who can implement it
 
-**For Fund Operations**:
-- Reduce reporting cycles from weeks to days
-- Eliminate manual data gathering and reconciliation
-- Ensure data consistency across all systems and reports
+AMOS is fully open source and can be deployed by internal IT or data teams using standard tooling.
 
-**For Investment Teams**:
-- Access real-time portfolio performance and risk metrics
-- Enable data-driven investment decision-making
-- Streamline due diligence with comprehensive data analysis
+For funds that prefer a guided rollout, the AMOS core team — composed of senior private markets operators and data engineers — can support implementation and manage adoption across teams.
 
-**For Fund Leadership**:
-- Gain complete visibility into fund performance and operations
-- Make strategic decisions based on accurate, timely data
-- Prepare for regulatory requirements and investor reporting
-
-## Open Source Advantage
-
-AMOS is built on open-source principles that extend beyond just the technical platform:
-
-**Open Platform**:
-- **No Vendor Lock-in**: Deploy on your preferred infrastructure
-- **Full Customization**: Adapt the platform to your specific needs
-- **Transparent Operations**: Complete visibility into how your data is processed
-
-**Open Methodology**:
-- **Proven Frameworks**: Access to battle-tested change management and implementation methodologies
-- **Transparent Practices**: Complete documentation of approaches that work in real fund environments
-- **Community Knowledge**: Benefit from shared experiences and best practices across the fund management industry
-
-## About This Documentation
-
-This documentation is organized into two complementary sections that reflect our vision of data transformation projects as comprehensive change management initiatives, not just technical implementations:
-
-<CardGroup cols={2}>
-  <Card title="Business Documentation" icon="briefcase">
-    Strategic guidance, implementation methodologies, and change management frameworks for fund leaders and decision-makers. This section covers the business case, use cases, and proven approaches for successful data transformation.
-  </Card>
-  
-  <Card title="Technical Documentation" icon="cog">
-    API references, integration guides, and technical specifications for developers and technical teams implementing AMOS.
-  </Card>
-</CardGroup>
-
-We believe that successful data transformation requires both excellent technology and proven methodology. By making both open source, we enable funds to build on the collective knowledge of the industry rather than starting from scratch.
-
-Ready to transform your fund's data operations? Start with our executive overview to understand how AMOS can deliver immediate value for your organization.
+Change management is an intentional part of the model: clear ownership, measurable adoption checkpoints, and minimal disruption to existing workflows.
